@@ -21,8 +21,9 @@ Backend opslag voor rittenkaarten. Activiteiten log met alle scans en opwaarderi
 
 https://docs.google.com/spreadsheets/d/1eTKFX7DJd5UzaKlY5XbSqFj9K7OH4z3QIVh-NmYufKc/edit?gid=0#gid=0
 
+<img width="1408" height="768" alt="logo RDW Richard digitale werkplaats" src="https://github.com/user-attachments/assets/36e8a5ad-af5e-4ba9-b455-90d5004cce44" />
 
-![Logo](logo RDW Richard digitale werkplaats.png)
+
 
 
 
