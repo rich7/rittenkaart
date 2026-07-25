@@ -4,7 +4,7 @@ scanned de QR code een geeft toegang, trekt 1 rit af, of geeft reden waarom gewe
 
 https://rich7.github.io/rittenkaart/scanner.html
 
-## 2. Admin tool.  Voegt leden toe, opwaarderen kaart, kaarten overzicht.   
+## 2. Admin tool.  Voegt rittenkaarten toe, opwaarderen kaart, kaarten overzicht.   
 
 https://rich7.github.io/rittenkaart/admin.html
 
