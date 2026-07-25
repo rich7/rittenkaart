@@ -25,6 +25,7 @@ https://docs.google.com/spreadsheets/d/1eTKFX7DJd5UzaKlY5XbSqFj9K7OH4z3QIVh-NmYu
 # Rittenkaart-app - installatie
 
 ## 1. Google Sheet aanmaken
+0. Maak Google account aan of gebruik bestaand account.
 1. Maak een nieuwe Google Sheet.
 2. Hernoem het eerste tabblad naar exact `Leden`.
 3. Zet in rij 1 deze koppen (kolom A t/m G):
