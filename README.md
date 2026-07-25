@@ -22,7 +22,7 @@ Backend opslag voor rittenkaarten. Activiteiten log met alle scans en opwaarderi
 https://docs.google.com/spreadsheets/d/1eTKFX7DJd5UzaKlY5XbSqFj9K7OH4z3QIVh-NmYufKc/edit?gid=0#gid=0
 
 
-![Logo](aimPDFXEdit_Pnhy0Y2diW.png)
+![Logo](logo RDW Richard digitale werkplaats.png)
 
 
 
