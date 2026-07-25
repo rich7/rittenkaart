@@ -1,3 +1,4 @@
+<img width="1408" height="768" alt="QR rittenkaart Gemini_Generated_Image_45ctb45ctb45ctb4" src="https://github.com/user-attachments/assets/f2875b2e-a094-4a62-8ea7-255850be0b56" />
 ## Rittenkaart
 Deze 'app' neemt de zorgen voor ritten kaarten uit handen. Het is voor verenigingen die de toegang tot hun faciliteiten per keer (rit) aanbieden. De 'apps' zijn gewone webpagina's die op de telefoon op computer werken. 
 Wil je op maat gemaakte rittenkaart of een kant en klare oplossing, kun je mij bereiken op rich.de.ree@gmail.com
