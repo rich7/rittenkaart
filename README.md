@@ -1,6 +1,6 @@
 ## Rittenkaart
 Deze 'app' neemt de zorgen voor ritten kaarten uit handen. Het is voor verenigingen die de toegang tot hun faciliteiten per keer (rit) aanbieden. De 'apps' zijn gewone webpagina's die op de telefoon op computer werken. 
-Wil je op maat gemaakte rittenkaart of ene kant en klare oplossing, kun je mij bereiken op rich.de.ree@gmail.com
+Wil je op maat gemaakte rittenkaart of een kant en klare oplossing, kun je mij bereiken op rich.de.ree@gmail.com
 
 
 ##Rittenkaart apps
