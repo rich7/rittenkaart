@@ -4,15 +4,18 @@ scanned de QR code een geeft toegang, trekt 1 rit af, of geeft reden waarom gewe
 
 https://rich7.github.io/rittenkaart/scanner.html
 
-## 2. Admin tool.  Voegt rittenkaarten toe, opwaarderen kaart, kaarten overzicht.   
+## 2. Admin tool.  
+Voegt rittenkaarten toe, opwaarderen kaart, kaarten overzicht.   
 
 https://rich7.github.io/rittenkaart/admin.html
 
-## 3. Leden app. QR code, laatste datum afschrijving en resterend tegoed 
+## 3. Leden app. 
+Geeft toegangs QR code, laatste datum afschrijving en resterend tegoed
 
 https://rich7.github.io/rittenkaart/leden.html
 
 ## 4. Opslag kaarten en activiteiten log op Google Sheets 
+Backend opslag voor rittenkaarten. Activiteiten log met alle scans en opwaarderingen 
 
 https://docs.google.com/spreadsheets/d/1eTKFX7DJd5UzaKlY5XbSqFj9K7OH4z3QIVh-NmYufKc/edit?gid=0#gid=0
 
