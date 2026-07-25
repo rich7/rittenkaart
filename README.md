@@ -1,8 +1,16 @@
+##Rittenkaart apps
+## 1. Scanner   
+scanned de QR code een geeft toegang, trekt 1 rit af, of geeft reden waarom geweigerd
+https://rich7.github.io/rittenkaart/scanner.html
 
-Scanner
-https://rich7.github.io/rittenkaart/index/
-Administratie
-https://rich7.github.io/rittenkaart/index/admin
+## 2. Admin tool.  Voegt leden toe, opwaarderen kaart, kaarten overzicht.   
+https://rich7.github.io/rittenkaart/admin.html
+
+## 3. Leden app. QR code, laatste datum afschrijving en resterend tegoed 
+https://rich7.github.io/rittenkaart/leden.html
+
+
+
 
 
 
