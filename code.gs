@@ -34,6 +34,7 @@ const LOG_SHEET_NAME = 'Log';
 const ADMIN_PASSWORD_PROP = 'ADMIN_PASSWORD';
 const VERENIGING_NAAM_PROP = 'VERENIGING_NAAM';
 const BERICHT_DUUR_PROP = 'BERICHT_DUUR_SECONDEN';
+const LID_APP_URL_PROP = 'LID_APP_URL';
 const START_SALDO = 10;
 const SCAN_COOLDOWN_MINUTEN = 5;
 
@@ -47,7 +48,9 @@ function doGet(e) {
       ADMIN_PASSWORD_gevonden: real !== null,
       ADMIN_PASSWORD_lengte: real ? real.length : 0,
       ADMIN_PASSWORD_heeft_spatie_rand: real ? (real !== real.trim()) : false,
-      VERENIGING_NAAM_gevonden: props.getProperty(VERENIGING_NAAM_PROP) !== null
+      VERENIGING_NAAM_gevonden: props.getProperty(VERENIGING_NAAM_PROP) !== null,
+      LID_APP_URL_gevonden: props.getProperty(LID_APP_URL_PROP) !== null,
+      LID_APP_URL_waarde: props.getProperty(LID_APP_URL_PROP) || '(niet ingesteld)'
     });
   }
   return jsonResponse({ info: 'Rittenkaart API draait. Gebruik ?debug=1 voor diagnose.' });
@@ -135,6 +138,10 @@ function memberStatus(lidnummer, email) {
     saldo: saldo,
     laatsteBezoek: laatsteScanRaw ? new Date(laatsteScanRaw).toLocaleString('nl-NL') : 'Nog niet geweest'
   };
+}
+
+function getLidAppUrl() {
+  return PropertiesService.getScriptProperties().getProperty(LID_APP_URL_PROP) || '';
 }
 
 function getVerenigingNaam() {
@@ -236,10 +243,12 @@ function topUp(lidnummer, aantal) {
 
   const sheet = getSheet();
   const naam = sheet.getRange(row, 2).getValue();
+  const email = sheet.getRange(row, 3).getValue();
   const huidig = Number(sheet.getRange(row, 5).getValue());
   const nieuw = huidig + n;
   sheet.getRange(row, 5).setValue(nieuw);
   logScan(lidnummer, naam, 'Opgewaardeerd met ' + n + ' ritten', nieuw);
+  stuurOpwaardeerMail(naam, email, n, nieuw);
   return { lidnummer: lidnummer, nieuwSaldo: nieuw };
 }
 
@@ -263,8 +272,9 @@ function stuurQrMail(naam, email, token, lidnummer) {
   const verenigingNaam = getVerenigingNaam();
   const qrUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=' + encodeURIComponent(token);
   const blob = UrlFetchApp.fetch(qrUrl).getBlob().setName('rittenkaart-qr.png');
+  const lidAppUrl = getLidAppUrl();
 
-  const html =
+  let html =
     '<p>Beste ' + naam + ',</p>' +
     '<p>Hierbij je persoonlijke rittenkaart voor ' + verenigingNaam + ' (lidnummer ' + lidnummer + '), ' +
     'goed voor ' + START_SALDO + ' ritten.</p>' +
@@ -273,11 +283,41 @@ function stuurQrMail(naam, email, token, lidnummer) {
     '<p>Bewaar deze e-mail goed &mdash; je hebt de code bij elk bezoek nodig. ' +
     'Bijna op? Vraag bij de administratie om je kaart op te waarderen.</p>';
 
+  if (lidAppUrl) {
+    html +=
+      '<p>Wil je op elk moment je tegoed en laatste bezoek bekijken? Ga naar ' +
+      '<a href="' + lidAppUrl + '">' + lidAppUrl + '</a> en vul je lidnummer en e-mailadres in.</p>';
+  }
+
   MailApp.sendEmail({
     to: email,
     subject: 'Jouw rittenkaart voor ' + verenigingNaam,
     htmlBody: html,
     inlineImages: { qrcode: blob }
+  });
+}
+
+function stuurOpwaardeerMail(naam, email, aantal, nieuwSaldo) {
+  const verenigingNaam = getVerenigingNaam();
+  const lidAppUrl = getLidAppUrl();
+
+  let html =
+    '<p>Beste ' + naam + ',</p>' +
+    '<p>Je rittenkaart is opgewaardeerd met ' + aantal + ' ritten. ' +
+    'Je hebt nu in totaal ' + nieuwSaldo + ' ritten over.</p>';
+
+  if (lidAppUrl) {
+    html +=
+      '<p>Wil je je tegoed op elk moment bekijken? Ga naar ' +
+      '<a href="' + lidAppUrl + '">' + lidAppUrl + '</a> en vul je lidnummer en e-mailadres in.</p>';
+  }
+
+  html += '<p>Tot ziens bij ' + verenigingNaam + '!</p>';
+
+  MailApp.sendEmail({
+    to: email,
+    subject: 'Je rittenkaart is opgewaardeerd - ' + verenigingNaam,
+    htmlBody: html
   });
 }
 
