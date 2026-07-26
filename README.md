@@ -1,9 +1,10 @@
 <img width="807" height="450" alt="qr scan 1784971454" src="https://github.com/user-attachments/assets/0994c996-6e69-4113-bec7-fb8fe4f0e778" />
 
-## Rittenkaart
+## Rittenkaart  de Makkelijkste manier, ook zonder apps en installatie mogelijk
 Deze 'app' neemt de zorgen voor ritten kaarten uit handen. Het is voor verenigingen die de toegang tot hun faciliteiten per keer (rit) aanbieden. De 'apps' zijn gewone webpagina's die op de telefoon op computer werken. 
 Wil je op maat gemaakte rittenkaart of een kant en klare oplossing, kun je mij bereiken op rich.de.ree@gmail.com
 
+## Vraag voor demo account
 
 ##Rittenkaart apps
 ## 1. Scanner   
