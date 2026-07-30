@@ -29,15 +29,16 @@ https://rich7.github.io/rittenkaart/leden.html
 ## 4. Opslag kaarten en activiteiten log op Google Sheets 
 Backend opslag voor rittenkaarten. Activiteiten log met alle scans en opwaarderingen 
 
-Screenshots Google sheets (backend, *Wordt automatisch bijgehouden*)  
+Screenshot Google sheets (backend, **Wordt automatisch bijgehouden**)  
 
 <img width="2092" height="752" alt="Wordt automatisch bijgehouden " src="https://github.com/user-attachments/assets/ce2a94c2-85a2-42a1-8680-3243646528a0" />
 
+Screenshot Google sheets (Logboek, **Wordt automatisch bijgehouden**)  
 
 <img width="1129" height="296" alt="rit log chrome_1mZIpOqx2e" src="https://github.com/user-attachments/assets/d645167e-08e5-4d38-badc-572e1957c165" />
 
-https://docs.google.com/spreadsheets/d/1eTKFX7DJd5UzaKlY5XbSqFj9K7OH4z3QIVh-NmYufKc/edit?gid=0#gid=0
 
+## Richard's digitale werkplaats
 <img width="1408" height="768" alt="logo RDW Richard digitale werkplaats" src="https://github.com/user-attachments/assets/36e8a5ad-af5e-4ba9-b455-90d5004cce44" />
 
 
