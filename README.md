@@ -6,7 +6,7 @@ Deze 'app' neemt de zorgen voor ritten kaarten uit handen. Het is voor verenigin
 
 
 ## Vraag voor demo account
-Op maat gemaakte eRittenkaart of een kant en klare oplossing of uitproberen? Ik ben bereikbaar op  rich.de.ree@gmail.com
+Uitproberen?  Op maat gemaakte eRittenkaart? of een kant en klare oplossing? Ik ben bereikbaar op  rich.de.ree@gmail.com
 
 ##   de eRittenkaart apps
 ## 1. Scanner   
