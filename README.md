@@ -98,3 +98,19 @@ Er verschijnt automatisch een tweede tabblad "Log" in je Sheet zodra de eerste s
 
 
 
+---
+
+## 📌 Over dit project / About this project
+
+**Automated QR Punch Pass System for Clubs & Associations**
+
+Deze open source rittenkaart-app automatiseert de ritten- en aanwezigheidsregistratie voor verenigingen, sportclubs en stichtingen. Met behulp van snelle QR-codescan worden ritten, beurten of sessies direct en foutloos bijgehouden op de digitale rittenkaart van het lid.
+
+### Key Features
+* 📱 **QR Code Scanning:** Snel scannen aan de deur of bij het instappen.
+* ⚡ **Automatische verwerking:** Direct bijwerken van het resterende saldo/ritten.
+* 🤝 **Open Source & Privacyvriendelijk:** Volledig naar eigen wens aan te passen en te beheren.
+* 🏆 **Ideaal voor verenigingen:** Geschikt voor clubvervoer, sportlessen, workshops en evenementen.
+
+---
+**Keywords:** rittenkaart app, open source rittenregistratie, vereniging software, QR code scanner, digitale strippenkaart, punch pass app, session tracker, club management tool, beurtenkaart, rittenpas.
