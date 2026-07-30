@@ -13,12 +13,12 @@ Uitproberen?  Op maat gemaakte eRittenkaart? of een kant en klare oplossing? Ik 
 App voor telefoon. Scanned de QR code een geeft toegang en trekt 1 rit af, of geeft reden waarom geweigerd.
 De app, is als webpagina gemaakt en werkt op vrijwel iedere telefoon.
 
-	[Try Scanner]](https://rich7.github.io/rittenkaart/scanner.html)
+	[Try Admin](https://rich7.github.io/rittenkaart/scanner.html)
 
 ## 2. Admin tool.  
 Voegt rittenkaarten toe, verstuurd email met nieuwe kaart (QR code). opwaarderen kaart, kaarten overzicht.  Instellingen
 
-	[Try Admin]](https://rich7.github.io/rittenkaart/admin.html)
+	[Try Admin](https://rich7.github.io/rittenkaart/admin.html)
 
 ## 3. Leden app. 
 QR code uit Email is voldoende.
@@ -60,15 +60,16 @@ Screenshot Google sheets (Logboek, **Wordt automatisch bijgehouden**)
 ## 2. Apps Script koppelen
 1. In de Sheet: **Extensies > Apps Script**.
 2. Verwijder de standaardinhoud en plak de inhoud van `Code.gs`.
-3. **Project instellingen > Scripteigenschappen**, voeg toe:
+[Naar code.gs](https://github.com/rich7/rittenkaart/blob/main/code.gs)
+4. **Project instellingen > Scripteigenschappen**, voeg toe:
    - `ADMIN_PASSWORD` = een wachtwoord naar keuze
    - `VERENIGING_NAAM` = naam van de vereniging (komt in de mail en op de schermen)
-4. **Implementeren > Nieuwe implementatie**
+5. **Implementeren > Nieuwe implementatie**
    - Type: **Webapp**
    - Uitvoeren als: **Ik**
    - Toegang: **Iedereen**
-5. Kopieer de webapp-URL die je krijgt (eindigt op `/exec`).
-6. Bij de eerste keer implementeren vraagt Google om machtigingen (Sheet lezen/schrijven, mail versturen) - accepteer die voor je eigen account.
+6. Kopieer de webapp-URL die je krijgt (eindigt op `/exec`).
+7. Bij de eerste keer implementeren vraagt Google om machtigingen (Sheet lezen/schrijven, mail versturen) - accepteer die voor je eigen account.
 
 ## 3. HTML-bestanden instellen
 Open `admin.html`, `scanner.html` en `lid.html` in een teksteditor en vervang in elk bestand:
