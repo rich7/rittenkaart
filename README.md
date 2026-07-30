@@ -11,20 +11,21 @@ Uitproberen?  Op maat gemaakte eRittenkaart? of een kant en klare oplossing? Ik 
 ##   de eRittenkaart apps
 ## 1. Scanner   
 App voor telefoon. Scanned de QR code een geeft toegang en trekt 1 rit af, of geeft reden waarom geweigerd.
+De app, is als webpagina gemaakt en werkt op vrijwel iedere telefoon.
 
-https://rich7.github.io/rittenkaart/scanner.html
+	[Try Scanner]](https://rich7.github.io/rittenkaart/scanner.html)
 
 ## 2. Admin tool.  
 Voegt rittenkaarten toe, verstuurd email met nieuwe kaart (QR code). opwaarderen kaart, kaarten overzicht.  Instellingen
 
-https://rich7.github.io/rittenkaart/admin.html
+	[Try Admin]](https://rich7.github.io/rittenkaart/admin.html)
 
 ## 3. Leden app. 
 QR code uit Email is voldoende.
 Optioneel kan lid de leden app gebruiken
 Laat toegangs QR code zien, laatste datum afschrijving en resterend tegoed
 
-https://rich7.github.io/rittenkaart/leden.html
+	[Try leden screen]](https://rich7.github.io/rittenkaart/leden.html)
 
 ## 4. Opslag kaarten en activiteiten log op Google Sheets 
 Backend opslag voor rittenkaarten. Activiteiten log met alle scans en opwaarderingen 
